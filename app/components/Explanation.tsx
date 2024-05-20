@@ -19,6 +19,7 @@ const Explanation: React.FC<ExplanationProps> = ({ content, onExplain }) => {
       setError(null);
     } catch (err) {
       setError('Failed to generate explanation.');
+      console.log(err);
     }
   };
 
